@@ -8,7 +8,7 @@
 
 ## INSTALL MYSQL-SERVER AND MYSQL CLIENT:
 
-** cmd:sudo apt-get install python-dev libmysqlclient-dev mysql-server
+** ** cmd:sudo apt-get install python-dev libmysqlclient-dev mysql-server
    
 ## BY USING COMMAND YOU HAVE TO INSTALL VIRTUAL ENVIRONMENT IN YOUR TERMINAL:
  ** cmd: $sudo apt install virtualenv
