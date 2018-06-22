@@ -3,8 +3,8 @@
 
 ## INSTALL PIP TO INSTALL PYTHON PACKAGES: 
 
- ** cmd:sudo apt update
- ** cmd: $ sudo apt install python-pip
+ * cmd:sudo apt update
+ * cmd: $ sudo apt install python-pip
 
 ## INSTALL MYSQL-SERVER AND MYSQL CLIENT:
 
