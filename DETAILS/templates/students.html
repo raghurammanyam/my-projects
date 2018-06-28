@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>STUDENT REPORT</title>
+  </head>
+  <h1> STUDENT ACADEMIC REPORT</h1>
+  <body>
+       {% if students %}
+       <div>
+         {% for  x in students  %}
+         <h1>{{ x.student_name }} - {{ x.subject }} - {{  x.marks }} - {{x.total}} - {{x.faculty}}</h1>
+         {% endfor %}
+       </div>
+       {% elif faculty %}
+       <div>
+         <h1> FACULTY DETAILS <h1>
+         {% for  Subjects in faculty  %}
+         <h1>{{ Subjects.subject }} - {{ Subjects.name }}</h1>
+         {% endfor %}
+       </div>
+       {% elif totalmarks %}
+       <div>
+          <h1> STUDENTS TOTAL </h1>
+         {% for x in totalmarks %}
+         <h1>{{ x.student_name }} - {{ x.total_marks}} </h1>
+         {% endfor %}
+       </div>
+       <div>
+         {% elif subjectaverage %}
+         <h1> Each Subject Average</h1>
+         {% for y in subjectaverage %}
+         <h1>{{ y.subject}} - {{y.name}} - {{y.faculty}}-{{y.total}} - {{y.avg_sub}}<h1>
+         {% endfor %}
+       </div>
+       <div>
+          {% elif percentage %}
+          <h1> Faculty with count<h1>
+            {% for a in percentage %}
+            <h1>{{ a.subject}}-{{a.total}}-{{a.faculty}}</h1>
+            {% endfor %}
+       </div>
+
+
+
+       {% endif %}
+
+
+
+
+
+
+
+
+  </body>
+</html>
