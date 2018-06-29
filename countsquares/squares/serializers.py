@@ -6,4 +6,4 @@ class squareSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = square
-        fields = ('number', 'sqr')
+        fields = '__all__'
