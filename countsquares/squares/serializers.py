@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from .models import square
+from .models import Square
 
 
-class squareSerializer(serializers.ModelSerializer):
+class SquareSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = square
+        model = Square
         fields = '__all__'

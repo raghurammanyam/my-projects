@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from .models import square
-class squareDetail(admin.ModelAdmin):
+from .models import Square
+class SquareDetail(admin.ModelAdmin):
     list_display=('number','sqr')
-admin.site.register(square,squareDetail)
+admin.site.register(Square,SquareDetail)
 
 # Register your models here.
