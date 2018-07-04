@@ -65,3 +65,21 @@ def cal_list(request,_number):
             del serializer_data['number']
             return Response(serializer.data,{'message': 'square {:d} created'}, status= 301)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'PUT':
+        print (request.data)
+        mul = Square.objects.filter(number=request.data["number"])
+        print (mul)
+        mul.update(Square=request.data["sqr"])
+        serializer = SquareSerializer(data=mul, many=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status= 301)
+
+    elif request.method== 'DELETE':
+        mul = Square.objects.filter(Number=_Number)
+        mul.delete()
+        serializer = SquareSerializer(data=mul, many=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status= 301)
