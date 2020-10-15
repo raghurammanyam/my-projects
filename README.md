@@ -10,6 +10,6 @@
 
 # how to test this?
  
- 1. [Install Docker Compose]('https://docs.docker.com/compose/install/')
+ 1. [Install Docker Compose](https://docs.docker.com/compose/install/"Install Docker Compose")
   
 
