@@ -18,13 +18,13 @@
  
      http://localhost:4000/api/distance
      
-     send data using form data
+     ## send data using form data
      
-     parameters
-     field: image1  
-     type: file
-     field : image2
-     type: file
+     # parameters
+     * field: image1  
+     * type: file
+     * field : image2
+     * type: file
      
  
   
