@@ -7,3 +7,9 @@
 * SQLite – SQLite database offers many advantages over others ,it comes along with python .
 
 * Minor dependencies can be found in the requirements.txt file on the root folder.
+
+# how to test this?
+ 
+ 1. [Install Docker Compose]['https://docs.docker.com/compose/install/']
+  
+
