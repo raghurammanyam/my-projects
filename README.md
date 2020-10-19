@@ -12,7 +12,8 @@
  
  1. [Install Docker Compose](https://docs.docker.com/compose/install/ "Install Docker Compose")
  
- 2. Run all containers with docker-compose up.
+ 2. Run all containers with 
+       # docker-compose up --build 
  
  3. test api using Postman
  
