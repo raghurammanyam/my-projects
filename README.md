@@ -16,15 +16,16 @@
  
  3. test api using Postman
  
-     http://localhost:4000/api/distance
+     http://0.0.0.0:4000/api/distance
      
-     ## send data using form data
+     ## data must be send using form-data
      
      # parameters
      * field: image1  
      * type: file
      * field : image2
      * type: file
+  4. please upload valid face images make sure face images may not be turned sideways or upside-down.
      
  
   
